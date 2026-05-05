@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///C:/Users/Admin/Downloads/index.html -->
+<html lang="th"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PropHub TH — เลือก Prop Firm เหมือนเช่าคอนโด</title>
+<link href="./PropHub TH — เลือก Prop Firm เหมือนเช่าคอนโด_files/css2" rel="stylesheet">
+<style>
+:root {
+  --bg:       #faf9f6;
+  --bg2:      #f3f1eb;
+  --bg3:      #e8e5dc;
+  --card:     #ffffff;
+  --text:     #1a1916;
+  --text2:    #5c5a54;
+  --text3:    #9c9a93;
+  --accent:   #d4622a;
+  --accent2:  #b84f1f;
+  --acc-bg:   #fdf0ea;
+  --green:    #2a7d4f;
+  --green-bg: #eaf4ef;
+  --red:      #c0392b;
+  --red-bg:   #fcecea;
+  --amber:    #b07d1a;
+  --amber-bg: #fdf6e3;
+  --line:     rgba(26,25,22,.09);
+  --line2:    rgba(26,25,22,.16);
+  --sans: 'Sarabun', sans-serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --r: 12px;
+  --r-sm: 7px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--sans); background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.65; }
+
+/* ─── NAV ─── */
+nav {
+  position: sticky; top: 0; z-index: 200;
+  background: rgba(250,249,246,.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+  padding: 0 2rem; height: 56px;
+  display: flex; align-items: center; gap: 10px;
+}
+.logo { display: flex; align-items: center; gap: 0; text-decoration: none; margin-right: auto; }
+.logo-b { background: var(--text); color: #fff; font-family: var(--mono); font-weight: 600; font-size: 14px; padding: 3px 9px; border-radius: 5px 0 0 5px; letter-spacing: -.01em; }
+.logo-o { background: var(--accent); color: #fff; font-family: var(--mono); font-weight: 600; font-size: 14px; padding: 3px 9px; border-radius: 0 5px 5px 0; letter-spacing: -.01em; }
+.logo-th { font-size: 11px; color: var(--text3); font-family: var(--mono); margin-left: 7px; }
+
+.nav-links { display: flex; }
+.nav-link { padding: 0 13px; height: 56px; display: flex; align-items: center; font-size: 13.5px; color: var(--text2); text-decoration: none; border-bottom: 2px solid transparent; transition: all .15s; white-space: nowrap; }
+.nav-link:hover { color: var(--text); }
+.nav-link.on { color: var(--accent); border-bottom-color: var(--accent); }
+.nav-cta { background: var(--accent); color: #fff; border: none; padding: 7px 16px; border-radius: 20px; font-size: 13px; font-family: var(--sans); font-weight: 600; cursor: pointer; text-decoration: none; transition: background .15s; white-space: nowrap; }
+.nav-cta:hover { background: var(--accent2); }
+
+/* ─── PAGES ─── */
+.pg { display: none; }
+.pg.on { display: block; }
+
+/* ─── HERO ─── */
+.hero { max-width: 760px; margin: 0 auto; padding: 3.5rem 2rem 2.5rem; text-align: center; }
+.eyebrow { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--accent); font-weight: 500; background: var(--acc-bg); padding: 4px 14px; border-radius: 20px; margin-bottom: 1.25rem; }
+.eyebrow::before { content: ''; width: 6px; height: 6px; background: var(--accent); border-radius: 50%; }
+h1 { font-size: clamp(26px, 4.5vw, 42px); font-weight: 700; line-height: 1.2; letter-spacing: -.02em; margin-bottom: .875rem; }
+h1 em { font-style: normal; color: var(--accent); }
+.hero-sub { font-size: 16px; color: var(--text2); max-width: 500px; margin: 0 auto 1.75rem; }
+.hero-btns { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.btn-p { background: var(--accent); color: #fff; padding: 11px 24px; border-radius: 22px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background .15s, transform .1s; border: none; cursor: pointer; font-family: var(--sans); }
+.btn-p:hover { background: var(--accent2); transform: translateY(-1px); }
+.btn-s { background: transparent; color: var(--text); padding: 11px 24px; border-radius: 22px; text-decoration: none; font-weight: 500; font-size: 14px; border: 1.5px solid var(--line2); transition: all .15s; cursor: pointer; font-family: var(--sans); }
+.btn-s:hover { border-color: var(--text2); }
+
+/* ─── TRUST BAR ─── */
+.trust { background: var(--bg2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: .875rem 2rem; }
+.trust-inner { max-width: 760px; margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 1.75rem; flex-wrap: wrap; }
+.trust-item { display: flex; align-items: center; gap: 5px; font-size: 12.5px; color: var(--text2); }
+.trust-dot { color: var(--accent); font-size: 14px; }
+
+/* ─── SECTION ─── */
+section { max-width: 860px; margin: 0 auto; padding: 3rem 2rem; }
+.sec-lbl { font-size: 11px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .4rem; }
+h2 { font-size: clamp(20px, 3vw, 28px); font-weight: 700; letter-spacing: -.01em; margin-bottom: .625rem; }
+.sec-intro { font-size: 15px; color: var(--text2); max-width: 520px; margin-bottom: 1.75rem; }
+
+/* ─── HOW IT WORKS ─── */
+.steps { display: flex; flex-direction: column; }
+.step { display: flex; gap: 0; }
+.step-l { width: 44px; display: flex; flex-direction: column; align-items: center; flex-shrink: 0; }
+.step-num { width: 34px; height: 34px; border-radius: 50%; background: var(--acc-bg); border: 1.5px solid var(--accent); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--accent); flex-shrink: 0; }
+.step-line { flex: 1; width: 1.5px; background: var(--line2); margin: 4px auto; min-height: 20px; }
+.step-body { flex: 1; padding: 4px 0 1.75rem 1.25rem; }
+.step-title { font-size: 16px; font-weight: 600; margin-bottom: 3px; }
+.step-sub { font-size: 13.5px; color: var(--text2); line-height: 1.6; }
+.step-tag { display: inline-block; font-size: 11px; font-family: var(--mono); background: var(--bg2); border: 1px solid var(--line); padding: 2px 9px; border-radius: 5px; color: var(--text2); margin-top: 7px; }
+
+/* ─── COMPARE SHELL ─── */
+.compare-shell { display: grid; grid-template-columns: 320px 1fr; min-height: calc(100vh - 56px); }
+
+/* ─── FILTER PANEL ─── */
+.panel {
+  background: var(--card);
+  border-right: 1px solid var(--line2);
+  padding: 1.5rem;
+  position: sticky; top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: auto;
+  display: flex; flex-direction: column; gap: 0;
+}
+.panel-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.25rem; }
+.panel-title { font-size: 15px; font-weight: 700; }
+.reset-btn { font-size: 12px; color: var(--accent); cursor: pointer; font-family: var(--mono); background: none; border: none; }
+.reset-btn:hover { text-decoration: underline; }
+
+.preset-lbl { font-size: 10px; font-weight: 600; letter-spacing: .1em; color: var(--text3); text-transform: uppercase; margin-bottom: .5rem; }
+.presets { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 1.25rem; }
+.preset { padding: 5px 12px; border-radius: 18px; border: 1.5px solid var(--line2); font-size: 12px; font-weight: 500; cursor: pointer; background: transparent; color: var(--text2); font-family: var(--sans); transition: all .15s; }
+.preset:hover { border-color: var(--accent); color: var(--accent); }
+.preset.on { background: var(--text); color: #fff; border-color: var(--text); }
+
+/* Style tab toggle */
+.filter-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--line2); margin-bottom: 1.1rem; }
+.ftab { flex: 1; padding: 8px 0; text-align: center; font-size: 12px; font-weight: 500; color: var(--text3); cursor: pointer; border: none; background: none; font-family: var(--sans); border-bottom: 2px solid transparent; transition: all .15s; }
+.ftab:hover { color: var(--text2); }
+.ftab.on { color: var(--accent); border-bottom-color: var(--accent); }
+.ftab-section { display: none; }
+.ftab-section.on { display: block; }
+
+/* Style cards */
+.style-cards { display: flex; flex-direction: column; gap: 7px; }
+.style-card {
+  border: 1.5px solid var(--line2); border-radius: 10px; padding: .75rem 1rem;
+  cursor: pointer; background: transparent; text-align: left; font-family: var(--sans);
+  transition: all .15s; width: 100%;
+}
+.style-card:hover { border-color: var(--accent); background: var(--acc-bg); }
+.style-card.on { border-color: var(--accent); background: var(--acc-bg); }
+.sc-top { display: flex; align-items: center; gap: 8px; margin-bottom: 3px; }
+.sc-emoji { font-size: 18px; flex-shrink: 0; }
+.sc-name { font-size: 13.5px; font-weight: 600; color: var(--text); }
+.sc-sub { font-size: 11.5px; color: var(--text2); line-height: 1.45; }
+.sc-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.sc-tag { font-size: 10px; font-family: var(--mono); padding: 2px 7px; border-radius: 8px; background: var(--bg2); color: var(--text3); }
+
+.divider { border: none; border-top: 1px solid var(--line); margin: 1.1rem 0; }
+
+.fg { margin-bottom: 1.1rem; }
+.fl { font-size: 11px; font-weight: 600; letter-spacing: .07em; color: var(--text2); text-transform: uppercase; margin-bottom: .5rem; display: flex; justify-content: space-between; align-items: center; }
+.fl span { font-family: var(--mono); font-weight: 500; color: var(--text); font-size: 13px; text-transform: none; letter-spacing: 0; }
+
+input[type=range] { -webkit-appearance: none; width: 100%; height: 4px; border-radius: 2px; background: var(--bg2); outline: none; cursor: pointer; }
+input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 17px; height: 17px; border-radius: 50%; background: var(--accent); border: 3px solid #fff; box-shadow: 0 0 0 1.5px var(--accent); cursor: pointer; transition: transform .1s; }
+input[type=range]::-webkit-slider-thumb:hover { transform: scale(1.15); }
+
+.toggles { display: flex; flex-direction: column; gap: 6px; }
+.tog-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; background: var(--bg); border-radius: 8px; cursor: pointer; transition: background .15s; }
+.tog-row:hover { background: var(--bg2); }
+.tog-lbl { font-size: 13px; color: var(--text2); display: flex; align-items: center; gap: 6px; }
+.tog-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.sw { position: relative; width: 34px; height: 19px; flex-shrink: 0; }
+.sw input { opacity: 0; width: 0; height: 0; }
+.sw-track { position: absolute; inset: 0; background: var(--bg3); border-radius: 10px; transition: background .2s; cursor: pointer; }
+.sw-track::before { content: ''; position: absolute; width: 13px; height: 13px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: transform .2s; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+input:checked + .sw-track { background: var(--green); }
+input:checked + .sw-track::before { transform: translateX(15px); }
+
+.radio-g { display: flex; gap: 5px; }
+.rbtn { flex: 1; padding: 6px 0; text-align: center; border: 1.5px solid var(--line2); border-radius: 7px; font-size: 12px; font-weight: 500; color: var(--text2); cursor: pointer; background: transparent; font-family: var(--sans); transition: all .15s; }
+.rbtn.on { background: var(--text); color: #fff; border-color: var(--text); }
+.rbtn:hover:not(.on) { border-color: var(--text2); }
+
+/* ─── RESULTS ─── */
+.results { padding: 1.5rem; display: flex; flex-direction: column; gap: 10px; }
+.res-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: .25rem; flex-wrap: wrap; gap: 8px; }
+.res-count { font-size: 13px; color: var(--text3); font-family: var(--mono); }
+.sort-row { display: flex; gap: 5px; align-items: center; }
+.sort-lbl { font-size: 12px; color: var(--text3); }
+.sbtn { padding: 4px 10px; border-radius: 12px; border: 1px solid var(--line2); font-size: 11px; font-family: var(--mono); cursor: pointer; background: transparent; color: var(--text2); transition: all .12s; }
+.sbtn.on { background: var(--text); color: #fff; border-color: var(--text); }
+
+/* ─── FIRM CARD ─── */
+.firm-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  overflow: hidden;
+  transition: border-color .2s, transform .15s, box-shadow .2s;
+  position: relative;
+}
+.firm-card:hover { border-color: var(--line2); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.05); }
+.firm-card.featured { border-color: var(--accent); border-width: 1.5px; }
+
+.match-bar { height: 3px; width: 100%; transition: background .4s; }
+
+.firm-inner { padding: 1.25rem; }
+.firm-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: .875rem; }
+.firm-name { font-size: 19px; font-weight: 700; letter-spacing: -.01em; }
+.firm-type { font-size: 11.5px; color: var(--text3); margin-top: 2px; }
+
+.match-wrap { text-align: right; flex-shrink: 0; }
+.match-lbl { font-size: 10px; font-family: var(--mono); color: var(--text3); text-transform: uppercase; letter-spacing: .06em; }
+.match-score { font-size: 25px; font-weight: 600; font-family: var(--mono); line-height: 1; margin-top: 2px; transition: color .4s; }
+
+/* Friendly verdict — the "buddy" touch */
+.verdict {
+  font-size: 13px;
+  color: var(--text2);
+  background: var(--bg);
+  border-radius: var(--r-sm);
+  padding: .625rem .875rem;
+  margin-bottom: .875rem;
+  line-height: 1.55;
+  border-left: 3px solid transparent;
+}
+.verdict.good { border-left-color: var(--green); }
+.verdict.ok   { border-left-color: var(--amber); }
+.verdict.bad  { border-left-color: var(--red); }
+.verdict strong { color: var(--text); font-weight: 600; }
+
+/* Stats */
+.stat-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 7px; margin-bottom: .875rem; }
+.stat-box { background: var(--bg); border-radius: 8px; padding: 7px 9px; }
+.stat-lbl { font-size: 10px; color: var(--text3); margin-bottom: 2px; font-family: var(--mono); }
+.stat-val { font-size: 13.5px; font-weight: 600; font-family: var(--mono); color: var(--text); }
+.stat-val.g { color: var(--green); }
+.stat-val.a { color: var(--amber); }
+.stat-val.r { color: var(--red); }
+
+/* Flags */
+.flags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: .875rem; }
+.flag { display: flex; align-items: center; gap: 4px; font-size: 11px; padding: 3px 8px; border-radius: 6px; font-family: var(--mono); }
+.f-ok  { background: var(--green-bg); color: var(--green); }
+.f-w   { background: var(--amber-bg); color: var(--amber); }
+.f-bad { background: var(--red-bg);   color: var(--red);   }
+.f-n   { background: var(--bg2);      color: var(--text2); }
+
+/* Quick pills — replaces score bars */
+.quick-pills { display: flex; gap: 8px; margin-bottom: .875rem; flex-wrap: wrap; }
+.qpill {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; flex: 1; min-width: 64px;
+  background: var(--bg); border-radius: 9px; padding: 8px 6px;
+  border: 1px solid var(--line);
+}
+.qpill-icon { font-size: 18px; line-height: 1; }
+.qpill-lbl  { font-size: 10px; color: var(--text3); font-family: var(--mono); text-align: center; }
+.qpill-val  { font-size: 12px; font-weight: 600; font-family: var(--mono); text-align: center; }
+.qpill-val.g { color: var(--green); }
+.qpill-val.a { color: var(--amber); }
+.qpill-val.r { color: var(--red);   }
+
+/* Affiliate strip */
+.aff-strip { display: flex; align-items: center; justify-content: space-between; background: var(--bg); border-top: 1px solid var(--line); padding: .75rem 1.25rem; gap: 10px; flex-wrap: wrap; }
+.aff-lbl { font-size: 11px; color: var(--text3); }
+.aff-val { font-size: 13px; font-weight: 600; font-family: var(--mono); color: var(--green); }
+.aff-btn { padding: 6px 14px; background: var(--accent); color: #fff; border: none; border-radius: 18px; font-size: 12px; font-weight: 600; cursor: pointer; font-family: var(--sans); transition: background .15s; text-decoration: none; white-space: nowrap; }
+.aff-btn:hover { background: var(--accent2); }
+
+.feat-badge { position: absolute; top: 12px; right: 12px; background: var(--accent); color: #fff; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; font-family: var(--mono); }
+
+/* No results */
+.no-res { text-align: center; padding: 4rem 2rem; color: var(--text3); }
+.no-res-emoji { font-size: 38px; margin-bottom: 1rem; }
+.no-res-t { font-size: 17px; font-weight: 600; color: var(--text2); margin-bottom: .5rem; }
+.no-res-s { font-size: 13.5px; line-height: 1.6; }
+
+/* ─── EARN PAGE ─── */
+.earn-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 10px; }
+.earn-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 1.25rem; transition: border-color .2s; }
+.earn-card:hover { border-color: var(--line2); }
+.earn-icon { width: 34px; height: 34px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-size: 17px; margin-bottom: .75rem; }
+.earn-title { font-size: 15px; font-weight: 600; margin-bottom: 3px; }
+.earn-sub { font-size: 13px; color: var(--text2); line-height: 1.55; }
+.earn-num { font-family: var(--mono); font-size: 12px; color: var(--green); font-weight: 500; margin-top: .5rem; }
+
+/* Calc */
+.calc-wrap { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 1.5rem; }
+.calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; margin-bottom: 1.25rem; }
+.calc-lbl { font-size: 13px; color: var(--text2); margin-bottom: 5px; }
+.calc-row { display: flex; align-items: center; gap: 8px; }
+.calc-v { font-family: var(--mono); font-size: 14px; font-weight: 500; min-width: 48px; text-align: right; }
+.calc-result { background: var(--acc-bg); border: 1.5px solid var(--accent); border-radius: var(--r-sm); padding: .875rem 1.25rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .5rem; }
+.calc-res-lbl { font-size: 13px; color: var(--accent2); }
+.calc-res-val { font-size: 24px; font-weight: 700; font-family: var(--mono); color: var(--accent); }
+
+/* ─── FAQ ─── */
+.faqs { display: flex; flex-direction: column; }
+.faq { border-bottom: 1px solid var(--line); padding: .875rem 0; cursor: pointer; }
+.faq:first-child { border-top: 1px solid var(--line); }
+.faq-q { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-size: 14.5px; font-weight: 500; }
+.faq-icon { width: 22px; height: 22px; border-radius: 50%; background: var(--bg2); display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; transition: transform .2s, background .2s; color: var(--text2); }
+.faq.open .faq-icon { transform: rotate(45deg); background: var(--acc-bg); color: var(--accent); }
+.faq-a { font-size: 13.5px; color: var(--text2); line-height: 1.65; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding-top .3s; }
+.faq.open .faq-a { max-height: 300px; padding-top: .5rem; }
+
+/* ─── FOOTER ─── */
+footer { background: var(--text); color: rgba(255,255,255,.5); padding: 2.5rem 2rem; text-align: center; font-size: 12.5px; line-height: 1.7; }
+.f-logo { display: flex; align-items: center; justify-content: center; gap: 0; margin-bottom: .5rem; }
+.f-logo-b { background: #fff; color: var(--text); font-family: var(--mono); font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 5px 0 0 5px; }
+.f-logo-o { background: var(--accent); color: #fff; font-family: var(--mono); font-weight: 600; font-size: 16px; padding: 3px 10px; border-radius: 0 5px 5px 0; }
+.f-chips { display: flex; gap: 5px; justify-content: center; margin: .75rem 0; flex-wrap: wrap; }
+.f-chip { background: rgba(255,255,255,.08); color: rgba(255,255,255,.6); font-size: 11px; padding: 3px 10px; border-radius: 12px; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 720px) {
+  .compare-shell { grid-template-columns: 1fr; }
+  .panel { position: static; height: auto; }
+  .stat-grid { grid-template-columns: repeat(2,1fr); }
+  .calc-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="file:///C:/Users/Admin/Downloads/index.html#" class="logo" onclick="go(&#39;home&#39;);return false">
+    <span class="logo-b">Prop</span><span class="logo-o">Hub</span>
+  </a>
+  <span class="logo-th">TH</span>
+  <div class="nav-links">
+    <a class="nav-link on" href="file:///C:/Users/Admin/Downloads/index.html#" id="nl-home" onclick="go(&#39;home&#39;);   return false">หน้าแรก</a>
+    <a class="nav-link" href="file:///C:/Users/Admin/Downloads/index.html#" id="nl-compare" onclick="go(&#39;compare&#39;);return false">เปรียบ Firm</a>
+    <a class="nav-link" href="file:///C:/Users/Admin/Downloads/index.html#" id="nl-faq" onclick="go(&#39;faq&#39;);    return false">คำถาม</a>
+  </div>
+  <a href="file:///C:/Users/Admin/Downloads/index.html#" class="nav-cta" onclick="go(&#39;compare&#39;);return false">เปรียบ Firm เลย →</a>
+</nav>
+
+<!-- ══════════════════════ HOME ══════════════════════ -->
+<div id="pg-home" class="pg on">
+  <div class="hero">
+    <h1>Prop Firm ที่ใช่<br><em>ต้องตรงจริต</em></h1>
+    <p class="hero-sub">แต่ละคนเทรดไม่เหมือนกัน — เลือกตามสไตล์จริงๆ ไม่ต้องไปอึดอัดกับกฎที่ไม่เหมาะกับวิธีทำเงินของตัวเอง</p>
+    <div class="hero-btns">
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="btn-p" onclick="go(&#39;compare&#39;);return false">หา Firm ที่ใช่เลย →</a>
+    </div>
+  </div>
+
+  <div class="trust">
+    <div class="trust-inner">
+      <div class="trust-item"><span class="trust-dot">●</span>ไม่มีสปอนเซอร์ซ่อนเร้น</div>
+      <div class="trust-item"><span class="trust-dot">●</span>อัปเดตกฎทุกสัปดาห์</div>
+      <div class="trust-item"><span class="trust-dot">●</span>Affiliate link โปร่งใส</div>
+      <div class="trust-item"><span class="trust-dot">●</span>ไม่ต้องเปิดเผยตัวตน</div>
+    </div>
+  </div>
+
+  <section>
+    <div class="sec-lbl">มันคืออะไร</div>
+    <h2>Prop Firm ทำงานยังไง</h2>
+    <p class="sec-intro">จ่ายค่าสมัครครั้งเดียว ผ่านแล้วได้ทุนจริงมาเทรด กำไร 80–90% เป็นของเรา</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-l"><div class="step-num">1</div><div class="step-line"></div></div>
+        <div class="step-body">
+          <div class="step-title">จ่าย fee แล้วสอบ</div>
+          <div class="step-sub">เทรดใน demo ให้ผ่าน profit target โดยไม่ bust drawdown — พิสูจน์ว่าเทรดได้จริง</div>
+          <span class="step-tag">fee $99–$599 / ครั้ง</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-l"><div class="step-num">2</div><div class="step-line"></div></div>
+        <div class="step-body">
+          <div class="step-title">ผ่านแล้วได้ทุนจริง</div>
+          <div class="step-sub">ได้บัญชีทุน $10K–$300K เทรดได้เลย กำไรแบ่งตาม split ที่ตกลงไว้</div>
+          <span class="step-tag">ทุน $10K–$300K</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-l"><div class="step-num">3</div></div>
+        <div class="step-body">
+          <div class="step-title">ถอนกำไรเข้าบัญชี</div>
+          <div class="step-sub">ยื่น payout request — โอนเข้า bank หรือ crypto ใช้เวลา 5–14 วันแล้วแต่ firm</div>
+          <span class="step-tag">split 80–100% ของกำไร</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════ COMPARE ══════════════════════ -->
+<div id="pg-compare" class="pg">
+  <div class="compare-shell">
+
+    <!-- PANEL -->
+    <div class="panel">
+      <div class="panel-head">
+        <div class="panel-title">🔧 ปรับตามชีวิตจริง</div>
+        <button class="reset-btn" onclick="resetAll()">reset ทั้งหมด</button>
+      </div>
+
+      <!-- Tab switcher -->
+      <div class="filter-tabs">
+        <button class="ftab on" onclick="switchFTab(&#39;quick&#39;,this)">⚡ ไวๆ</button>
+        <button class="ftab" onclick="switchFTab(&#39;style&#39;,this)">🎯 สไตล์เทรด</button>
+      </div>
+
+      <!-- TAB: Quick presets -->
+      <div id="ftab-quick" class="ftab-section on">
+        <div class="preset-lbl">สำเร็จรูป — กดแล้วปรับเพิ่มได้</div>
+        <div class="presets">
+          <button class="preset" onclick="applyPreset(&#39;cheap&#39;,this)">💸 ค่าสมัครถูก</button>
+          <button class="preset" onclick="applyPreset(&#39;fast&#39;,this)">⚡ ถอนเร็ว</button>
+          <button class="preset" onclick="applyPreset(&#39;fair&#39;,this)">🎯 กฎแฟร์สุด</button>
+          <button class="preset" onclick="applyPreset(&#39;newbie&#39;,this)">🌱 มือใหม่</button>
+          <button class="preset" onclick="applyPreset(&#39;bigfund&#39;,this)">🏦 ทุนเยอะ</button>
+        </div>
+      </div>
+
+      <!-- TAB: Trading style -->
+      <div id="ftab-style" class="ftab-section">
+        <div class="preset-lbl" style="margin-bottom:.75rem">ไม่รู้จะเลือกอะไร? บอกสไตล์เทรดมา</div>
+        <div class="style-cards" id="style-cards">
+
+          <button class="style-card" onclick="applyStyle(&#39;scalping&#39;,this)">
+            <div class="sc-top"><span class="sc-emoji">⚡</span><span class="sc-name">Scalping</span></div>
+            <div class="sc-sub">เปิด-ปิดหลายรอบต่อวัน ถือแค่วินาที–นาที กำไรเล็กสะสม — <strong>ต้องการ freedom สูงสุด</strong></div>
+            <div class="sc-tags">
+              <span class="sc-tag">⛔ Consistency รบกวนมาก</span>
+              <span class="sc-tag">⛔ DLL ตัดทิ้ง</span>
+              <span class="sc-tag">✓ EOD DD ปลอดภัยกว่า</span>
+              <span class="sc-tag">ปิดในวัน</span>
+            </div>
+          </button>
+
+          <button class="style-card" onclick="applyStyle(&#39;daytrade&#39;,this)">
+            <div class="sc-top"><span class="sc-emoji">☀️</span><span class="sc-name">Day Trading</span></div>
+            <div class="sc-sub">เทรดภายในวัน ปิดก่อนตลาดปิดทุกวัน ไม่ค้างข้ามคืน — <strong>กำไรกระจายสม่ำเสมอ ผ่าน Consistency ได้ง่ายกว่า</strong></div>
+            <div class="sc-tags">
+              <span class="sc-tag">✓ EOD DD เหมาะมาก</span>
+              <span class="sc-tag">Consistency พอรับได้</span>
+              <span class="sc-tag">payout เร็ว</span>
+              <span class="sc-tag">ปิดในวัน</span>
+            </div>
+          </button>
+
+          <button class="style-card" onclick="applyStyle(&#39;swing&#39;,this)">
+            <div class="sc-top"><span class="sc-emoji">🌊</span><span class="sc-name">Swing Trading</span></div>
+            <div class="sc-sub">ถือข้ามคืน 2–5 วัน รอ setup ใหญ่ — <strong>กำไรกระจุกตัวบางวัน ระวัง Consistency rule มาก</strong></div>
+            <div class="sc-tags">
+              <span class="sc-tag">✓ overnight บังคับ</span>
+              <span class="sc-tag">⛔ Consistency อันตราย</span>
+              <span class="sc-tag">✓ EOD DD ดีกว่า Intraday</span>
+              <span class="sc-tag">ทุนพอสมควร</span>
+            </div>
+          </button>
+
+          <button class="style-card" onclick="applyStyle(&#39;trend&#39;,this)">
+            <div class="sc-top"><span class="sc-emoji">📈</span><span class="sc-name">Trend Following</span></div>
+            <div class="sc-sub">ตาม momentum ใหญ่ ถือนานเป็นสัปดาห์ — <strong>กำไรกระจุกตัวสูง Consistency rule ทำร้ายมากที่สุด</strong></div>
+            <div class="sc-tags">
+              <span class="sc-tag">✓ overnight บังคับ</span>
+              <span class="sc-tag">⛔ Consistency อันตรายมาก</span>
+              <span class="sc-tag">✓ Scaling plan สำคัญ</span>
+              <span class="sc-tag">ทุนสูง</span>
+            </div>
+          </button>
+
+          <button class="style-card" onclick="applyStyle(&#39;position&#39;,this)">
+            <div class="sc-top"><span class="sc-emoji">🏔️</span><span class="sc-name">Position Trading</span></div>
+            <div class="sc-sub">ถือยาวสัปดาห์–เดือน เน้น macro ไม่สนใจ noise — <strong>ต้องการทุนสูง overnight ได้ DLL ยิ่งน้อยยิ่งดี</strong></div>
+            <div class="sc-tags">
+              <span class="sc-tag">✓ overnight บังคับ</span>
+              <span class="sc-tag">⛔ DLL รบกวน</span>
+              <span class="sc-tag">✓ ทุนสูง $100K+</span>
+              <span class="sc-tag">⛔ Consistency อันตราย</span>
+            </div>
+          </button>
+
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="fg">
+        <div class="fl">ค่าสมัครสูงสุด <span id="lbl-fee">$600</span></div>
+        <input type="range" id="sl-fee" min="99" max="600" step="1" value="600" oninput="update()">
+      </div>
+      <div class="fg">
+        <div class="fl">ทุนขั้นต่ำที่ต้องการ <span id="lbl-fund">$10K</span></div>
+        <input type="range" id="sl-fund" min="10" max="200" step="5" value="10" oninput="update()">
+      </div>
+      <div class="fg">
+        <div class="fl">Profit split ขั้นต่ำ <span id="lbl-split">80%</span></div>
+        <input type="range" id="sl-split" min="70" max="100" step="5" value="80" oninput="update()">
+      </div>
+      <div class="fg">
+        <div class="fl">Payout ภายใน <span id="lbl-payout">30 วัน</span></div>
+        <input type="range" id="sl-payout" min="1" max="30" step="1" value="30" oninput="update()">
+      </div>
+
+      <hr class="divider">
+
+      <div class="fg">
+        <div class="fl" style="margin-bottom:.625rem">กฎที่ต้องการ / ไม่ต้องการ</div>
+        <div class="toggles">
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--green)"></span>ต้องการ EOD Trailing DD</div>
+            <label class="sw"><input type="checkbox" id="tog-eod" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--red)"></span>ไม่ต้องการ Consistency Rule</div>
+            <label class="sw"><input type="checkbox" id="tog-nocon" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--red)"></span>ไม่ต้องการ Daily Loss Limit</div>
+            <label class="sw"><input type="checkbox" id="tog-nodll" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--green)"></span>Hold Overnight ได้</div>
+            <label class="sw"><input type="checkbox" id="tog-overnight" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--green)"></span>เทรด Crypto ได้</div>
+            <label class="sw"><input type="checkbox" id="tog-crypto" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+          <label class="tog-row">
+            <div class="tog-lbl"><span class="tog-dot" style="background:var(--green)"></span>มี Scaling Plan</div>
+            <label class="sw"><input type="checkbox" id="tog-scale" onchange="update()"><span class="sw-track"></span></label>
+          </label>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="fg">
+        <div class="fl" style="margin-bottom:.5rem">สินทรัพย์</div>
+        <div class="radio-g">
+          <button class="rbtn on" data-asset="all" onclick="setAsset(&#39;all&#39;,this)">ทั้งหมด</button>
+          <button class="rbtn" data-asset="futures" onclick="setAsset(&#39;futures&#39;,this)">Futures</button>
+          <button class="rbtn" data-asset="forex" onclick="setAsset(&#39;forex&#39;,this)">Forex</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESULTS -->
+    <div class="results">
+      <div class="res-head">
+        <div class="res-count" id="res-count">พบ 6 จาก 6 firm ที่ตรงกับคุณ</div>
+        <div class="sort-row">
+          <span class="sort-lbl">เรียงตาม</span>
+          <button class="sbtn on" data-sort="match" onclick="setSort(&#39;match&#39;,this)">match</button>
+          <button class="sbtn" data-sort="fee" onclick="setSort(&#39;fee&#39;,this)">ราคา</button>
+          <button class="sbtn" data-sort="split" onclick="setSort(&#39;split&#39;,this)">split</button>
+          <button class="sbtn" data-sort="payout" onclick="setSort(&#39;payout&#39;,this)">payout</button>
+        </div>
+      </div>
+      <div id="card-list"><div class="firm-card featured">
+    <div class="feat-badge">⭐ แนะนำ</div>
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">Topstep</div><div class="firm-type">Futures — NinjaTrader / Tradovate / TopstepX</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 EOD trailing ที่ fair ที่สุดในตลาด + community ใหญ่ที่สุดด้วย ถ้าเทรด Futures นี่คือตัวแรกที่ควรลอง</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $50K – $150K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">👍</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val a">$165</span></div>
+    <div class="qpill"><span class="qpill-icon">🤑</span><span class="qpill-lbl">split</span><span class="qpill-val g">90%</span></div>
+    <div class="qpill"><span class="qpill-icon">🛡️</span><span class="qpill-lbl">DD type</span><span class="qpill-val g">EOD DD</span></div>
+    <div class="qpill"><span class="qpill-icon">🔴</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val r">มีทั้งคู่</span></div>
+    <div class="qpill"><span class="qpill-icon">📅</span><span class="qpill-lbl">payout</span><span class="qpill-val a">8 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>EOD trailing ✓</span><span class="flag f-n"><span>·</span>Consistency 50%</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$35–50 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">20–30% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div><div class="firm-card ">
+    
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">Apex Trader Funding</div><div class="firm-type">Futures — Rithmic</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 100% split เดือนแรก + ทุนสูงสุด $300K ค่าสมัครถูกสุดในกลุ่ม Futures</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $25K – $300K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">💸</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val g">$147</span></div>
+    <div class="qpill"><span class="qpill-icon">🤑</span><span class="qpill-lbl">split</span><span class="qpill-val g">100%</span></div>
+    <div class="qpill"><span class="qpill-icon">🛡️</span><span class="qpill-lbl">DD type</span><span class="qpill-val g">EOD DD</span></div>
+    <div class="qpill"><span class="qpill-icon">🟡</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val a">ไม่มี DLL</span></div>
+    <div class="qpill"><span class="qpill-icon">⚡</span><span class="qpill-lbl">payout</span><span class="qpill-val g">7 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>EOD trailing ✓</span><span class="flag f-n"><span>·</span>Consistency 30%</span><span class="flag f-ok"><span>✓</span>ไม่มี DLL</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$15–50 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">10% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div><div class="firm-card ">
+    
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">MyFundedFutures</div><div class="firm-type">Futures — NinjaTrader / Tradovate</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 EOD trailing เหมือน Topstep แต่ community เป็นกันเองกว่า support ตอบเร็วมาก</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $50K – $200K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">👍</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val a">$165</span></div>
+    <div class="qpill"><span class="qpill-icon">🤑</span><span class="qpill-lbl">split</span><span class="qpill-val g">90%</span></div>
+    <div class="qpill"><span class="qpill-icon">🛡️</span><span class="qpill-lbl">DD type</span><span class="qpill-val g">EOD DD</span></div>
+    <div class="qpill"><span class="qpill-icon">🔴</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val r">มีทั้งคู่</span></div>
+    <div class="qpill"><span class="qpill-icon">📅</span><span class="qpill-lbl">payout</span><span class="qpill-val a">8 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>EOD trailing ✓</span><span class="flag f-n"><span>·</span>Consistency 40%</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$30–50 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">≈20% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div><div class="firm-card ">
+    
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">FTMO</div><div class="firm-type">Forex / CFD — MT4 / MT5 / cTrader</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 แบรนด์ดังที่สุดโลก ทุนเริ่ม $10K Overnight ได้ Crypto ได้ — เหมาะ Forex trader ทุกระดับ</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $10K – $200K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">👍</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val a">$155</span></div>
+    <div class="qpill"><span class="qpill-icon">🤑</span><span class="qpill-lbl">split</span><span class="qpill-val g">90%</span></div>
+    <div class="qpill"><span class="qpill-icon">⚠️</span><span class="qpill-lbl">DD type</span><span class="qpill-val r">Intraday</span></div>
+    <div class="qpill"><span class="qpill-icon">🟡</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val a">ไม่มี Consist.</span></div>
+    <div class="qpill"><span class="qpill-icon">📅</span><span class="qpill-lbl">payout</span><span class="qpill-val a">14 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>ไม่มี Consistency</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$15–30 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">10% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div><div class="firm-card ">
+    
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">Tradeify</div><div class="firm-type">Futures — Tradovate</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 ไม่มี Consistency Rule และไม่มี DLL — เสรีที่สุดในกลุ่ม Futures ปรับ size ได้เต็มที่</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $25K – $150K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">💸</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val g">$150</span></div>
+    <div class="qpill"><span class="qpill-icon">🤑</span><span class="qpill-lbl">split</span><span class="qpill-val g">90%</span></div>
+    <div class="qpill"><span class="qpill-icon">🛡️</span><span class="qpill-lbl">DD type</span><span class="qpill-val g">EOD DD</span></div>
+    <div class="qpill"><span class="qpill-icon">🟢</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val g">กฎน้อยสุด</span></div>
+    <div class="qpill"><span class="qpill-icon">⚡</span><span class="qpill-lbl">payout</span><span class="qpill-val g">7 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>EOD trailing ✓</span><span class="flag f-ok"><span>✓</span>ไม่มี Consistency</span><span class="flag f-ok"><span>✓</span>ไม่มี DLL</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$20–40 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">≈15% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div><div class="firm-card ">
+    
+    <div class="match-bar" style="background:#2a7d4f"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">Bulenox</div><div class="firm-type">Futures — Rithmic</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:#2a7d4f">100%</div></div>
+      </div>
+      <div class="verdict good">👍 ค่าสมัครถูกที่สุด $99 ไม่มี Consistency และไม่มี DLL ทดลองเทรดสไตล์ตัวเองได้เต็มที่</div>
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $10K – $100K</div>
+      <div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">💸</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val g">$99</span></div>
+    <div class="qpill"><span class="qpill-icon">💼</span><span class="qpill-lbl">split</span><span class="qpill-val a">80%</span></div>
+    <div class="qpill"><span class="qpill-icon">🛡️</span><span class="qpill-lbl">DD type</span><span class="qpill-val g">EOD DD</span></div>
+    <div class="qpill"><span class="qpill-icon">🟢</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val g">กฎน้อยสุด</span></div>
+    <div class="qpill"><span class="qpill-icon">📅</span><span class="qpill-lbl">payout</span><span class="qpill-val a">10 วัน</span></div>
+  </div>
+      <div class="flags"><span class="flag f-ok"><span>✓</span>EOD trailing ✓</span><span class="flag f-ok"><span>✓</span>ไม่มี Consistency</span><span class="flag f-ok"><span>✓</span>ไม่มี DLL</span></div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">≈$10–20 / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">≈10% of fee</div>
+      <a href="file:///C:/Users/Admin/Downloads/index.html#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div></div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══════════════════════ EARN ══════════════════════ -->
+<div id="pg-earn" class="pg">
+  <section>
+    <div class="sec-lbl">หารายได้</div>
+    <h2>แนะนำ Prop Firm แล้วได้เงินยังไง</h2>
+    <p class="sec-intro">ไม่ต้องเปิดหน้า ไม่ต้องโชว์พอร์ต แค่แนะนำคนที่สนใจก็ได้ commission แล้ว</p>
+    <div class="earn-cards" style="margin-bottom:2rem">
+      <div class="earn-card">
+        <div class="earn-icon" style="background:var(--acc-bg)">🔗</div>
+        <div class="earn-title">Affiliate Link</div>
+        <div class="earn-sub">สมัคร affiliate แล้วแปะ link ใน content — ทุกคนที่คลิกแล้วซื้อ เราได้ค่าคอมฯ ทันที ไม่ต้องรับผิดชอบเรื่องการเทรด</div>
+        <div class="earn-num">≈ $15–100+ ต่อการสมัคร</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-icon" style="background:var(--green-bg)">📱</div>
+        <div class="earn-title">Facebook / IG เพจ Faceless</div>
+        <div class="earn-sub">โพสต์ comparison, tips, กฎ prop firm ใช้ชื่อเพจแทนชื่อจริง ไม่ต้องโชว์หน้า — ขับด้วย affiliate link ทุกโพสต์</div>
+        <div class="earn-num">potential ไม่จำกัด</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-icon" style="background:var(--amber-bg)">🎙️</div>
+        <div class="earn-title">YouTube / TikTok Faceless</div>
+        <div class="earn-sub">voiceover + screen recording กราฟ infographic "ทำ $50K Topstep ยังไง" — viral ง่ายมาก ไม่ต้องโชว์หน้าเลย</div>
+        <div class="earn-num">+ ค่าโฆษณา YouTube</div>
+      </div>
+      <div class="earn-card">
+        <div class="earn-icon" style="background:#eaf0fc">📧</div>
+        <div class="earn-title">Newsletter / Line OA</div>
+        <div class="earn-sub">ส่ง weekly update "กฎ prop firm เปลี่ยนอะไรสัปดาห์นี้" — build trust แล้วผสม affiliate link เข้าไปแบบ organic</div>
+        <div class="earn-num">recurring passive income</div>
+      </div>
+    </div>
+
+    <h2 style="font-size:19px;margin-bottom:.75rem">คำนวณรายได้ประมาณการ</h2>
+    <div class="calc-wrap">
+      <div class="calc-grid">
+        <div>
+          <div class="calc-lbl">คนคลิก link ต่อเดือน</div>
+          <div class="calc-row"><input type="range" id="cl-clicks" min="100" max="5000" step="100" value="1000" oninput="calcAff()"><div class="calc-v" id="v-clicks">1,000</div></div>
+        </div>
+        <div>
+          <div class="calc-lbl">อัตราซื้อ (Conversion %)</div>
+          <div class="calc-row"><input type="range" id="cl-conv" min="1" max="20" step="1" value="5" oninput="calcAff()"><div class="calc-v" id="v-conv">5%</div></div>
+        </div>
+        <div>
+          <div class="calc-lbl">commission ต่อการสมัคร ($)</div>
+          <div class="calc-row"><input type="range" id="cl-comm" min="15" max="200" step="5" value="50" oninput="calcAff()"><div class="calc-v" id="v-comm">$50</div></div>
+        </div>
+        <div>
+          <div class="calc-lbl">จำนวน Firm ที่แนะนำ</div>
+          <div class="calc-row"><input type="range" id="cl-firms" min="1" max="5" step="1" value="2" oninput="calcAff()"><div class="calc-v" id="v-firms">2</div></div>
+        </div>
+      </div>
+      <div class="calc-result">
+        <div>
+          <div class="calc-res-lbl">รายได้ affiliate ประมาณการ / เดือน</div>
+          <div style="font-size:11px;color:var(--accent2);margin-top:2px">ก่อนภาษีและค่าใช้จ่าย — ตัวเลขประมาณการเท่านั้น</div>
+        </div>
+        <div class="calc-res-val" id="res-aff">$5,000</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ══════════════════════ FAQ ══════════════════════ -->
+<div id="pg-faq" class="pg">
+  <section>
+    <div class="sec-lbl">คำถามที่ถามบ่อย</div>
+    <h2>ตอบตรงๆ ไม่มีเยิ่นเย้อ</h2>
+    <div class="faqs" id="faq-list">
+  <div class="faq" id="fq-0" onclick="toggleFaq(0)">
+    <div class="faq-q"><span>เงินที่เทรดได้จริงไหม หรือแค่ demo?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">ตอนสอบ Evaluation ใช้ demo จริง แต่เมื่อผ่านและได้ Funded Account แล้ว กำไรที่ได้จ่ายเป็นเงินจริง ถอนได้จริง — บาง firm mirror trade กับบัญชีจริงของ firm</div>
+  </div>
+  <div class="faq" id="fq-1" onclick="toggleFaq(1)">
+    <div class="faq-q"><span>ถ้า fail ต้องเสียเงินเยอะไหม?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">เสียแค่ค่าสมัคร evaluation เท่านั้น ($99–$599) ไม่มีความเสี่ยงเพิ่มเติม เพราะเทรดด้วยทุน firm ไม่ใช่เงินตัวเอง — บาง firm ให้ retry ในราคาถูกลง</div>
+  </div>
+  <div class="faq" id="fq-2" onclick="toggleFaq(2)">
+    <div class="faq-q"><span>Prop Firm ที่ดีที่สุดคือตัวไหน?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">ขึ้นกับสไตล์เทรด — ถ้าเทรด Futures อยากได้กฎแฟร์สุด: Topstep หรือ Tradeify ถ้าอยากได้ค่าสมัครถูก: Apex หรือ Bulenox ถ้าเทรด Forex: FTMO ใช้เครื่องมือ filter ด้านบนเลย</div>
+  </div>
+  <div class="faq" id="fq-3" onclick="toggleFaq(3)">
+    <div class="faq-q"><span>Affiliate ต้องสมัครยังไง?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">แต่ละ firm มี affiliate portal แยก — Topstep ที่ topstep.com/affiliates, Apex ที่ apextraderfunding.com/affiliate เมื่อสมัครแล้วจะได้ unique link ทุกคนที่คลิกและซื้อ เราได้ commission</div>
+  </div>
+  <div class="faq" id="fq-4" onclick="toggleFaq(4)">
+    <div class="faq-q"><span>ต้องเปิดเผยตัวตนไหมเวลาทำ affiliate?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">ไม่จำเป็น ใช้ชื่อเพจแทนได้เลย แต่ต้องแจ้งว่าลิงก์เป็น affiliate link ตามมาตรฐาน disclosure เช่น "ลิงก์นี้เป็น affiliate link ซึ่งผมอาจได้รับค่าคอมมิชชัน" — แค่นั้นพอ</div>
+  </div>
+  <div class="faq" id="fq-5" onclick="toggleFaq(5)">
+    <div class="faq-q"><span>EOD Trailing vs Intraday Trailing ต่างกันยังไง?</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">EOD (End-of-Day) trailing: MLL ขยับเฉพาะตาม closing balance ของวัน — ระหว่างวันเทรดขึ้นลงได้โดย floor ไม่ขยับ ดีกว่า Intraday ที่ขยับทันทีตาม equity ทุกวินาที ซึ่งทำให้ stress มากกว่า</div>
+  </div></div>
+  </section>
+</div>
+
+<footer>
+  <div class="f-logo"><span class="f-logo-b">Prop</span><span class="f-logo-o">Hub</span></div>
+  <div>รีวิว Prop Firm ภาษาไทยที่ตรงที่สุด — เพื่อนเทรดที่จริงใจที่สุด</div>
+  <div class="f-chips">
+    <span class="f-chip">ไม่มีสปอนเซอร์ซ่อนเร้น</span>
+    <span class="f-chip">Affiliate โปร่งใส</span>
+    <span class="f-chip">อัปเดตรายสัปดาห์</span>
+  </div>
+  <div style="margin-top:.75rem;color:rgba(255,255,255,.3);font-size:11px">เนื้อหาบนเว็บนี้เป็นข้อมูลทั่วไปเท่านั้น ไม่ใช่คำแนะนำทางการเงิน — การเทรดมีความเสี่ยง<br>ลิงก์บางส่วนเป็น affiliate link ซึ่งอาจได้รับค่าคอมมิชชัน</div>
+</footer>
+
+<script>
+// ══════════════════════════════════════════
+//  DATA
+// ══════════════════════════════════════════
+const FIRMS = [
+  { id:'topstep', name:'Topstep', featured:true, type:'Futures — NinjaTrader / Tradovate / TopstepX', asset:'futures', fee:165, fundMin:50, fundMax:150, split:90, payoutDays:8, eodDD:true, hasConsistency:true, consistencyPct:50, hasDLL:true, overnight:false, crypto:true, scaling:true,
+    verdict: { good:'EOD trailing ที่ fair ที่สุดในตลาด + community ใหญ่ที่สุดด้วย ถ้าเทรด Futures นี่คือตัวแรกที่ควรลอง', ok:'Consistency 50% พอจัดการได้ แต่ระวัง DLL ที่ขึ้นกับ platform', bad:'' },
+    affComm:'≈$35–50', affNote:'20–30% of fee', scores:{ fee:60, split:90, rules:85, payout:75, support:90 } },
+  { id:'apex', name:'Apex Trader Funding', featured:false, type:'Futures — Rithmic', asset:'futures', fee:147, fundMin:25, fundMax:300, split:100, payoutDays:7, eodDD:true, hasConsistency:true, consistencyPct:30, hasDLL:false, overnight:false, crypto:false, scaling:true,
+    verdict:{ good:'100% split เดือนแรก + ทุนสูงสุด $300K ค่าสมัครถูกสุดในกลุ่ม Futures', ok:'ไม่มี DLL เป็นข้อดีมาก แต่ Consistency 30% เข้มมาก วันกำไรใหญ่ต้องระวัง', bad:'' },
+    affComm:'≈$15–50', affNote:'10% of fee', scores:{ fee:90, split:95, rules:60, payout:80, support:70 } },
+  { id:'mff', name:'MyFundedFutures', featured:false, type:'Futures — NinjaTrader / Tradovate', asset:'futures', fee:165, fundMin:50, fundMax:200, split:90, payoutDays:8, eodDD:true, hasConsistency:true, consistencyPct:40, hasDLL:true, overnight:false, crypto:false, scaling:false,
+    verdict:{ good:'EOD trailing เหมือน Topstep แต่ community เป็นกันเองกว่า support ตอบเร็วมาก', ok:'Consistency 40% และมี DLL — ต้องตั้ง hard stop ให้ดีก่อนเทรดทุกวัน', bad:'' },
+    affComm:'≈$30–50', affNote:'≈20% of fee', scores:{ fee:60, split:85, rules:70, payout:75, support:80 } },
+  { id:'ftmo', name:'FTMO', featured:false, type:'Forex / CFD — MT4 / MT5 / cTrader', asset:'forex', fee:155, fundMin:10, fundMax:200, split:90, payoutDays:14, eodDD:false, hasConsistency:false, hasDLL:true, overnight:true, crypto:true, scaling:true,
+    verdict:{ good:'แบรนด์ดังที่สุดโลก ทุนเริ่ม $10K Overnight ได้ Crypto ได้ — เหมาะ Forex trader ทุกระดับ', ok:'Static DD (ไม่ใช่ EOD) และ payout รอบ 14 วัน — ไม่เหมาะคนอยากถอนบ่อย', bad:'' },
+    affComm:'≈$15–30', affNote:'10% of fee', scores:{ fee:75, split:85, rules:65, payout:50, support:85 } },
+  { id:'tradeify', name:'Tradeify', featured:false, type:'Futures — Tradovate', asset:'futures', fee:150, fundMin:25, fundMax:150, split:90, payoutDays:7, eodDD:true, hasConsistency:false, hasDLL:false, overnight:false, crypto:false, scaling:false,
+    verdict:{ good:'ไม่มี Consistency Rule และไม่มี DLL — เสรีที่สุดในกลุ่ม Futures ปรับ size ได้เต็มที่', ok:'แบรนด์ใหม่กว่า community น้อยกว่า ไม่มี scaling — ต้องรู้จักจัดการ risk เอง', bad:'' },
+    affComm:'≈$20–40', affNote:'≈15% of fee', scores:{ fee:72, split:85, rules:95, payout:80, support:60 } },
+  { id:'bulenox', name:'Bulenox', featured:false, type:'Futures — Rithmic', asset:'futures', fee:99, fundMin:10, fundMax:100, split:80, payoutDays:10, eodDD:true, hasConsistency:false, hasDLL:false, overnight:false, crypto:false, scaling:false,
+    verdict:{ good:'ค่าสมัครถูกที่สุด $99 ไม่มี Consistency และไม่มี DLL ทดลองเทรดสไตล์ตัวเองได้เต็มที่', ok:'Split แค่ 80% และทุนสูงสุด $100K เท่านั้น — เหมาะเป็นจุดเริ่มต้นก่อน upgrade firm', bad:'' },
+    affComm:'≈$10–20', affNote:'≈10% of fee', scores:{ fee:98, split:65, rules:90, payout:70, support:55 } },
+];
+
+// ══════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════
+let ST = { fee:600, fund:10, split:80, payout:30, eod:false, nocon:false, nodll:false, overnight:false, crypto:false, scale:false, asset:'all', sort:'match' };
+
+// ══════════════════════════════════════════
+//  SCORING
+// ══════════════════════════════════════════
+function score(f) {
+  if (f.fee > ST.fee) return null;
+  if (f.split < ST.split) return null;
+  if (f.payoutDays > ST.payout) return null;
+  if (ST.asset !== 'all' && f.asset !== ST.asset) return null;
+
+  let s = 100, flags = [];
+
+  if (ST.eod) {
+    f.eodDD ? (s += 15, flags.push({ t:'EOD trailing ✓', c:'f-ok' })) : (s -= 20, flags.push({ t:'ไม่มี EOD trailing', c:'f-bad' }));
+  } else if (f.eodDD) flags.push({ t:'EOD trailing ✓', c:'f-ok' });
+
+  if (ST.nocon) {
+    !f.hasConsistency ? (s += 20, flags.push({ t:'ไม่มี Consistency ✓', c:'f-ok' })) : (s -= 25, flags.push({ t:`Consistency ${f.consistencyPct}%`, c:'f-w' }));
+  } else {
+    f.hasConsistency ? flags.push({ t:`Consistency ${f.consistencyPct}%`, c:'f-n' }) : flags.push({ t:'ไม่มี Consistency', c:'f-ok' });
+  }
+
+  if (ST.nodll) {
+    !f.hasDLL ? (s += 15, flags.push({ t:'ไม่มี DLL ✓', c:'f-ok' })) : (s -= 15, flags.push({ t:'มี DLL', c:'f-w' }));
+  } else if (!f.hasDLL) flags.push({ t:'ไม่มี DLL', c:'f-ok' });
+
+  if (ST.overnight) f.overnight ? (s += 10, flags.push({ t:'Overnight ✓', c:'f-ok' })) : (s -= 15, flags.push({ t:'ปิด EOD บังคับ', c:'f-bad' }));
+  if (ST.crypto)    f.crypto    ? (s += 8,  flags.push({ t:'Crypto ✓', c:'f-ok' }))    : (s -= 10, flags.push({ t:'ไม่มี Crypto', c:'f-w' }));
+  if (ST.scale)     f.scaling   ? (s += 8,  flags.push({ t:'Scaling ✓', c:'f-ok' }))   : (s -= 8,  flags.push({ t:'ไม่มี Scaling', c:'f-n' }));
+
+  s += Math.round((1 - f.fee / 600) * 10);
+  s += Math.round((f.split - 80) / 20 * 8);
+  s += Math.round((30 - f.payoutDays) / 30 * 8);
+  s = Math.max(0, Math.min(100, s));
+  return { s, flags };
+}
+
+function mc(s) { return s >= 78 ? '#2a7d4f' : s >= 52 ? '#b07d1a' : '#c0392b'; }
+
+// ── FRIENDLY VERDICT ──
+function verdictHtml(f, s) {
+  const cls = s >= 78 ? 'good' : s >= 52 ? 'ok' : 'bad';
+  const txt = s >= 78 ? f.verdict.good : f.verdict.ok || f.verdict.bad;
+  const emoji = s >= 78 ? '👍' : s >= 52 ? '👌' : '⚠️';
+  return `<div class="verdict ${cls}">${emoji} ${txt}</div>`;
+}
+
+function renderCard(f, m) {
+  const col = mc(m.s);
+  // Quick-read pills — 3 things that matter most
+  const feeIcon  = f.fee <= 150 ? '💸' : f.fee <= 250 ? '👍' : '💰';
+  const feeVal   = '$' + f.fee;
+  const feeCls   = f.fee <= 150 ? 'g' : f.fee <= 300 ? 'a' : 'r';
+
+  const ruleIcon = (!f.hasConsistency && !f.hasDLL) ? '🟢' : (!f.hasConsistency || !f.hasDLL) ? '🟡' : '🔴';
+  const ruleTxt  = (!f.hasConsistency && !f.hasDLL) ? 'กฎน้อยสุด' : (!f.hasConsistency) ? 'ไม่มี Consist.' : (!f.hasDLL) ? 'ไม่มี DLL' : 'มีทั้งคู่';
+  const ruleCls  = (!f.hasConsistency && !f.hasDLL) ? 'g' : (!f.hasConsistency || !f.hasDLL) ? 'a' : 'r';
+
+  const payIcon  = f.payoutDays <= 7 ? '⚡' : f.payoutDays <= 14 ? '📅' : '🐢';
+  const payCls   = f.payoutDays <= 7 ? 'g' : f.payoutDays <= 14 ? 'a' : 'r';
+
+  const ddIcon   = f.eodDD ? '🛡️' : '⚠️';
+  const ddTxt    = f.eodDD ? 'EOD DD' : 'Intraday';
+  const ddCls    = f.eodDD ? 'g' : 'r';
+
+  const splitIcon = f.split >= 90 ? '🤑' : '💼';
+  const splitCls  = f.split >= 90 ? 'g' : 'a';
+
+  const pillsHtml = `<div class="quick-pills">
+    <div class="qpill"><span class="qpill-icon">${feeIcon}</span><span class="qpill-lbl">ค่าสมัคร</span><span class="qpill-val ${feeCls}">${feeVal}</span></div>
+    <div class="qpill"><span class="qpill-icon">${splitIcon}</span><span class="qpill-lbl">split</span><span class="qpill-val ${splitCls}">${f.split}%</span></div>
+    <div class="qpill"><span class="qpill-icon">${ddIcon}</span><span class="qpill-lbl">DD type</span><span class="qpill-val ${ddCls}">${ddTxt}</span></div>
+    <div class="qpill"><span class="qpill-icon">${ruleIcon}</span><span class="qpill-lbl">กฎพิเศษ</span><span class="qpill-val ${ruleCls}">${ruleTxt}</span></div>
+    <div class="qpill"><span class="qpill-icon">${payIcon}</span><span class="qpill-lbl">payout</span><span class="qpill-val ${payCls}">${f.payoutDays} วัน</span></div>
+  </div>`;
+
+  const flagsHtml = m.flags.slice(0,6).map(fl =>
+    `<span class="flag ${fl.c}"><span>${fl.c==='f-ok'?'✓':fl.c==='f-bad'?'✕':fl.c==='f-w'?'!':'·'}</span>${fl.t}</span>`
+  ).join('');
+
+  return `<div class="firm-card ${f.featured?'featured':''}">
+    ${f.featured?'<div class="feat-badge">⭐ แนะนำ</div>':''}
+    <div class="match-bar" style="background:${col}"></div>
+    <div class="firm-inner">
+      <div class="firm-top">
+        <div><div class="firm-name">${f.name}</div><div class="firm-type">${f.type}</div></div>
+        <div class="match-wrap"><div class="match-lbl">match</div><div class="match-score" style="color:${col}">${m.s}%</div></div>
+      </div>
+      ${verdictHtml(f, m.s)}
+      <div style="font-size:12px;color:var(--text3);font-family:var(--mono);margin-bottom:.625rem">ทุน $${f.fundMin}K – $${f.fundMax}K</div>
+      ${pillsHtml}
+      <div class="flags">${flagsHtml}</div>
+    </div>
+    <div class="aff-strip">
+      <div><div class="aff-lbl">Affiliate commission</div><div class="aff-val">${f.affComm} / คน</div></div>
+      <div style="font-size:11px;color:var(--text3)">${f.affNote}</div>
+      <a href="#" class="aff-btn">ดู affiliate →</a>
+    </div>
+  </div>`;
+}
+
+function update() {
+  ST.fee    = +document.getElementById('sl-fee').value;
+  ST.fund   = +document.getElementById('sl-fund').value;
+  ST.split  = +document.getElementById('sl-split').value;
+  ST.payout = +document.getElementById('sl-payout').value;
+
+  document.getElementById('lbl-fee').textContent    = '$' + ST.fee;
+  document.getElementById('lbl-fund').textContent   = '$' + ST.fund + 'K';
+  document.getElementById('lbl-split').textContent  = ST.split + '%';
+  document.getElementById('lbl-payout').textContent = ST.payout + ' วัน';
+
+  ST.eod      = document.getElementById('tog-eod').checked;
+  ST.nocon    = document.getElementById('tog-nocon').checked;
+  ST.nodll    = document.getElementById('tog-nodll').checked;
+  ST.overnight= document.getElementById('tog-overnight').checked;
+  ST.crypto   = document.getElementById('tog-crypto').checked;
+  ST.scale    = document.getElementById('tog-scale').checked;
+
+  let res = FIRMS.map(f => { const m = score(f); return m ? { f, m } : null; }).filter(Boolean);
+  if (ST.sort === 'match')  res.sort((a,b) => b.m.s - a.m.s);
+  if (ST.sort === 'fee')    res.sort((a,b) => a.f.fee - b.f.fee);
+  if (ST.sort === 'split')  res.sort((a,b) => b.f.split - a.f.split);
+  if (ST.sort === 'payout') res.sort((a,b) => a.f.payoutDays - b.f.payoutDays);
+
+  document.getElementById('res-count').textContent = `พบ ${res.length} จาก ${FIRMS.length} firm ที่ตรงกับคุณ`;
+  document.getElementById('card-list').innerHTML = res.length
+    ? res.map(r => renderCard(r.f, r.m)).join('')
+    : `<div class="no-res"><div class="no-res-emoji">🔍</div><div class="no-res-t">ไม่มี Firm ที่ตรงเลย</div><div class="no-res-s">ลองปรับ filter ให้หลวมขึ้นสักหน่อย<br>หรือกด <strong>reset ทั้งหมด</strong> แล้วเริ่มใหม่</div></div>`;
+}
+
+const STYLE_PRESETS = {
+  // Scalping: กำไรกระจาย natural ผ่าน consistency ได้ง่าย แต่ DLL ตัดทิ้งเพราะ volume สูง
+  // ต้องการ no DLL สำคัญที่สุด + EOD DD (intraday DD อันตรายมากสำหรับ scalper)
+  scalping: { fee:600, fund:25,  split:85, payout:14, eod:true,  nocon:false, nodll:true,  overnight:false, crypto:false, scale:false, asset:'futures' },
+
+  // Day Trading: ปิดในวัน กำไรสม่ำเสมอ consistency ไม่ค่อยเป็นปัญหา
+  // ต้องการ EOD DD + payout เร็ว แต่ DLL และ consistency พอรับได้
+  daytrade: { fee:600, fund:25,  split:80, payout:7,  eod:true,  nocon:false, nodll:false, overnight:false, crypto:false, scale:false, asset:'all' },
+
+  // Swing Trading: กำไรกระจุกตัว consistency อันตรายมาก overnight บังคับ
+  // ต้องการ no consistency + overnight + EOD DD
+  swing:    { fee:600, fund:50,  split:80, payout:14, eod:true,  nocon:true,  nodll:false, overnight:true,  crypto:false, scale:false, asset:'all' },
+
+  // Trend Following: กำไรกระจุกตัวสูงสุด consistency ทำร้ายมากที่สุด ถือนาน overnight สำคัญ
+  // ต้องการ no consistency + overnight + scaling + ทุนสูง
+  trend:    { fee:600, fund:100, split:80, payout:30, eod:false, nocon:true,  nodll:false, overnight:true,  crypto:false, scale:true,  asset:'all' },
+
+  // Position Trading: ถือนานมาก DLL รบกวน consistency อันตราย ต้องการทุนสูง overnight
+  // ต้องการ no consistency + no DLL + overnight + ทุนสูง
+  position: { fee:600, fund:100, split:80, payout:30, eod:false, nocon:true,  nodll:true,  overnight:true,  crypto:false, scale:true,  asset:'all' },
+};
+
+function switchFTab(id, btn) {
+  document.querySelectorAll('.ftab').forEach(t => t.classList.remove('on'));
+  document.querySelectorAll('.ftab-section').forEach(s => s.classList.remove('on'));
+  btn.classList.add('on');
+  document.getElementById('ftab-' + id).classList.add('on');
+}
+
+function applyStyle(k, btn) {
+  document.querySelectorAll('.style-card').forEach(c => c.classList.remove('on'));
+  btn.classList.add('on');
+  // also clear quick presets
+  document.querySelectorAll('.preset').forEach(p => p.classList.remove('on'));
+  const p = STYLE_PRESETS[k];
+  Object.assign(ST, p);
+  document.getElementById('sl-fee').value       = p.fee;
+  document.getElementById('sl-fund').value      = p.fund;
+  document.getElementById('sl-split').value     = p.split;
+  document.getElementById('sl-payout').value    = p.payout;
+  document.getElementById('tog-eod').checked      = p.eod;
+  document.getElementById('tog-nocon').checked    = p.nocon;
+  document.getElementById('tog-nodll').checked    = p.nodll;
+  document.getElementById('tog-overnight').checked = p.overnight;
+  document.getElementById('tog-crypto').checked   = p.crypto;
+  document.getElementById('tog-scale').checked    = p.scale;
+  // set asset filter
+  const assetBtn = document.querySelector(`[data-asset="${p.asset}"]`);
+  if (assetBtn) setAsset(p.asset, assetBtn);
+  else update();
+}
+
+const PRESETS = {
+  cheap:   { fee:150, fund:10, split:80, payout:30, eod:false, nocon:false, nodll:false, overnight:false, crypto:false, scale:false },
+  fast:    { fee:600, fund:10, split:80, payout:7,  eod:false, nocon:false, nodll:false, overnight:false, crypto:false, scale:false },
+  fair:    { fee:600, fund:10, split:80, payout:30, eod:true,  nocon:true,  nodll:true,  overnight:false, crypto:false, scale:false },
+  newbie:  { fee:200, fund:10, split:80, payout:14, eod:true,  nocon:false, nodll:false, overnight:true,  crypto:false, scale:false },
+  scalper: { fee:600, fund:25, split:85, payout:14, eod:true,  nocon:true,  nodll:true,  overnight:false, crypto:false, scale:false },
+  bigfund: { fee:600, fund:100,split:85, payout:30, eod:false, nocon:false, nodll:false, overnight:false, crypto:false, scale:true  },
+};
+
+function applyPreset(k, btn) {
+  document.querySelectorAll('.preset').forEach(p => p.classList.remove('on'));
+  document.querySelectorAll('.style-card').forEach(c => c.classList.remove('on'));
+  btn.classList.add('on');
+  const p = PRESETS[k];
+  Object.assign(ST, p);
+  document.getElementById('sl-fee').value    = p.fee;
+  document.getElementById('sl-fund').value   = p.fund;
+  document.getElementById('sl-split').value  = p.split;
+  document.getElementById('sl-payout').value = p.payout;
+  document.getElementById('tog-eod').checked      = p.eod;
+  document.getElementById('tog-nocon').checked    = p.nocon;
+  document.getElementById('tog-nodll').checked    = p.nodll;
+  document.getElementById('tog-overnight').checked= p.overnight;
+  document.getElementById('tog-crypto').checked   = p.crypto;
+  document.getElementById('tog-scale').checked    = p.scale;
+  update();
+}
+
+function resetAll() {
+  document.querySelectorAll('.preset').forEach(p => p.classList.remove('on'));
+  document.querySelectorAll('.style-card').forEach(c => c.classList.remove('on'));
+  document.getElementById('sl-fee').value = 600; document.getElementById('sl-fund').value = 10;
+  document.getElementById('sl-split').value = 80; document.getElementById('sl-payout').value = 30;
+  ['tog-eod','tog-nocon','tog-nodll','tog-overnight','tog-crypto','tog-scale'].forEach(id => document.getElementById(id).checked = false);
+  setAsset('all', document.querySelector('[data-asset="all"]'));
+  update();
+}
+
+function setAsset(v, btn) {
+  document.querySelectorAll('[data-asset]').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on'); ST.asset = v; update();
+}
+function setSort(v, btn) {
+  document.querySelectorAll('[data-sort]').forEach(b => b.classList.remove('on'));
+  btn.classList.add('on'); ST.sort = v; update();
+}
+
+// ── CALC ──
+function calcAff() {
+  const clicks = +document.getElementById('cl-clicks').value;
+  const conv   = +document.getElementById('cl-conv').value;
+  const comm   = +document.getElementById('cl-comm').value;
+  const firms  = +document.getElementById('cl-firms').value;
+  document.getElementById('v-clicks').textContent = clicks.toLocaleString();
+  document.getElementById('v-conv').textContent   = conv + '%';
+  document.getElementById('v-comm').textContent   = '$' + comm;
+  document.getElementById('v-firms').textContent  = firms;
+  document.getElementById('res-aff').textContent  = '$' + Math.round(clicks * conv/100 * comm * firms).toLocaleString();
+}
+
+// ── FAQ ──
+const FAQS = [
+  { q:'เงินที่เทรดได้จริงไหม หรือแค่ demo?', a:'ตอนสอบ Evaluation ใช้ demo จริง แต่เมื่อผ่านและได้ Funded Account แล้ว กำไรที่ได้จ่ายเป็นเงินจริง ถอนได้จริง — บาง firm mirror trade กับบัญชีจริงของ firm' },
+  { q:'ถ้า fail ต้องเสียเงินเยอะไหม?', a:'เสียแค่ค่าสมัคร evaluation เท่านั้น ($99–$599) ไม่มีความเสี่ยงเพิ่มเติม เพราะเทรดด้วยทุน firm ไม่ใช่เงินตัวเอง — บาง firm ให้ retry ในราคาถูกลง' },
+  { q:'Prop Firm ที่ดีที่สุดคือตัวไหน?', a:'ขึ้นกับสไตล์เทรด — ถ้าเทรด Futures อยากได้กฎแฟร์สุด: Topstep หรือ Tradeify ถ้าอยากได้ค่าสมัครถูก: Apex หรือ Bulenox ถ้าเทรด Forex: FTMO ใช้เครื่องมือ filter ด้านบนเลย' },
+  { q:'Affiliate ต้องสมัครยังไง?', a:'แต่ละ firm มี affiliate portal แยก — Topstep ที่ topstep.com/affiliates, Apex ที่ apextraderfunding.com/affiliate เมื่อสมัครแล้วจะได้ unique link ทุกคนที่คลิกและซื้อ เราได้ commission' },
+  { q:'ต้องเปิดเผยตัวตนไหมเวลาทำ affiliate?', a:'ไม่จำเป็น ใช้ชื่อเพจแทนได้เลย แต่ต้องแจ้งว่าลิงก์เป็น affiliate link ตามมาตรฐาน disclosure เช่น "ลิงก์นี้เป็น affiliate link ซึ่งผมอาจได้รับค่าคอมมิชชัน" — แค่นั้นพอ' },
+  { q:'EOD Trailing vs Intraday Trailing ต่างกันยังไง?', a:'EOD (End-of-Day) trailing: MLL ขยับเฉพาะตาม closing balance ของวัน — ระหว่างวันเทรดขึ้นลงได้โดย floor ไม่ขยับ ดีกว่า Intraday ที่ขยับทันทีตาม equity ทุกวินาที ซึ่งทำให้ stress มากกว่า' },
+];
+
+document.getElementById('faq-list').innerHTML = FAQS.map((f,i) => `
+  <div class="faq" id="fq-${i}" onclick="toggleFaq(${i})">
+    <div class="faq-q"><span>${f.q}</span><span class="faq-icon">+</span></div>
+    <div class="faq-a">${f.a}</div>
+  </div>`).join('');
+
+function toggleFaq(i) { document.getElementById('fq-'+i).classList.toggle('open'); }
+
+// ── NAV ──
+function go(pg) {
+  document.querySelectorAll('.pg').forEach(p => p.classList.remove('on'));
+  document.getElementById('pg-'+pg).classList.add('on');
+  document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('on'));
+  const nl = document.getElementById('nl-'+pg);
+  if (nl) nl.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// INIT
+calcAff();
+update();
+</script>
+
+
+</body></html>
